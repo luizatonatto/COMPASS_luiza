@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'cucumber'
+gem 'bundler'
+gem 'rspec'
+gem 'excon'
+gem 'pry'
+gem 'faker'
+gem 'json'
+gem 'json-schema'
+gem 'jsonpath'
