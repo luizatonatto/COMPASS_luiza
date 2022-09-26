@@ -1,5 +1,6 @@
 # language: pt
 
+@regression
 @post_usuarios
 Funcionalidade: Post usuarios
     Como uma aplicação xpto
@@ -10,13 +11,14 @@ Funcionalidade: Post usuarios
 Cenário: [POST] Cadastrar usuario com sucesso pela rota /usuarios
     Dado possuir um payload de novo usuário para cadastrar
     Quando realizar uma chamada POST para a rota "/usuarios" 
-    Então validar que foi criado um novo usuário
+    Então validar que foi retornado o status code 201 e a mensagem "Cadastro realizado com sucesso"
     
 @post_usuario_400
 Cenário: [POST] Tentar cadastrar usuario com email já existente pela rota /usuarios
     Dado possuir um novo usuário cadastrado corretamente 
     Quando realizar uma chamada POST para a rota "/usuarios" 
-    Então validar que não foi possivel criar um novo usuário
+    Então validar que foi retornado o status code 400 e a mensagem "Este email já está sendo usado"
+    
 
 
 
