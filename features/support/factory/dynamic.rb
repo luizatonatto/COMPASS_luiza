@@ -53,13 +53,12 @@ module Factory
             }  
         end
 
-        def self.login_valid_user
-            payload ={
-                 "nome": Faker::Name.name,
-                 "email": Faker::Internet.email,
-                 "password": "teste",
-                 "administrador": "true",
-             }
+
+        def self.set_valid_login
+            @payload = {
+                "email": "fulano@qa.com",
+                "password": "teste"
+            }
         end
     end
 end 

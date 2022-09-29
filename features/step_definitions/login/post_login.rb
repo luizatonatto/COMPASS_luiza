@@ -6,10 +6,11 @@ Dado('que tenha um usuário com email e senha em branco') do
 end
 
 Dado ('que tenha um usuário com email e senha válidos') do
-  @payload = { 
-    'email': @email["email"],
-    'password': @senha["password"]
-   }
+  @payload = {
+      "email": Factory::Dynamic.set_valid_login[:email],
+      "password": "teste"
+  }
+
 end
   
 Então('será exibida uma mensagem de erro') do

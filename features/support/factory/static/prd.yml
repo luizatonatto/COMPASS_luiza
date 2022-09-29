@@ -20,7 +20,9 @@ mensagem_erro_cart: '{
     ]
 }'
 
-cancela_compra: 'cancela-compra'
+email_user_valido: 'fulano@qa.com'
+
+
 
 
 
