@@ -1,6 +1,6 @@
 class ServeRest
-    include Excon # biblioteca para fazer requisições HTTP
-    attr_accessor :base_uri
+  include Excon # biblioteca para fazer requisições HTTP
+  attr_accessor :base_uri
 
     def initialize
         self.base_uri = $base_uri

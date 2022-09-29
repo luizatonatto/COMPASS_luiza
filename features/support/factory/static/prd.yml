@@ -10,4 +10,17 @@ usuario_nao_admin:
   password: naoadmin
 
 
+carrinho_id: 'qbMqntef4iTOwWfg'
+carrinho_invalido: 'CarrinhoInvalido'
+
+mensagem_erro_cart: '{
+    "message": "Não é permitido possuir produto duplicado",
+    "idProdutosDuplicados": [
+        "BeeJh5lz3k6kSIzA"
+    ]
+}'
+
+cancela_compra: 'cancela-compra'
+
+
 
